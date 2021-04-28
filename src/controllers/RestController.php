@@ -16,6 +16,9 @@ class RestController extends \yii\rest\Controller
             'exceptionFilter' => [
                 'class' => ErrorToExceptionFilter::className()
             ],
+            [
+                'class' => Cors::class,
+            ]
         ]);
     }
 
